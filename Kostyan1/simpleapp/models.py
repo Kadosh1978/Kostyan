@@ -20,6 +20,7 @@ class Product(models.Model):
     )
     price = models.FloatField(
         validators=[MinValueValidator(0.0)],
+        
     )
 
     def __str__(self):
